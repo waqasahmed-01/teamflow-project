@@ -50,7 +50,21 @@ const loginUser = async ({ email, password }) => {
   };
 };
 
+//Getting Current User
+const getCurrentUser = async (userId) => {
+  const user = await User.findById(userId);
+
+  if (!user) {
+    const error = new Error("User not found");
+    error.statusCode = 404;
+    throw error;
+  }
+
+  return user;
+};
+
 module.exports = {
   registerUser,
   loginUser,
+  getCurrentUser,
 };
