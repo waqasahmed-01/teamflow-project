@@ -1,12 +1,14 @@
 const express = require("express");
-const morgan = require('morgan');
+const morgan = require("morgan");
 const authRoutes = require("./routes/auth.route");
-const errorHandler = require("./middleware/error.middleware");
+const teamRoutes = require("./routes/team.route");
+const teamMemberRoutes = require("./routes/teamMember.routes");
+const errorHandler = require("./middlewares/error.middleware");
 
 const app = express();
 
 app.use(express.json());
-app.use(morgan('tiny'));
+app.use(morgan("tiny"));
 
 app.get("/api/v1/health", (req, res) => {
   res.status(200).json({
@@ -16,6 +18,8 @@ app.get("/api/v1/health", (req, res) => {
 });
 
 app.use("/api/v1/auth", authRoutes);
+app.use("/api/v1/teams", teamRoutes);
+app.use("/api/v1/teams", teamMemberRoutes);
 
 app.use(errorHandler);
 

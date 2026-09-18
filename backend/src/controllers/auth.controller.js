@@ -39,7 +39,7 @@ const login = async (req, res, next) => {
           email: user.email,
           avatar: user.avatar,
         },
-        accessToken,
+        token: accessToken,
       },
     });
   } catch (error) {
