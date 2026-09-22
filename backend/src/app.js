@@ -1,3 +1,4 @@
+const cors = require("cors");
 const express = require("express");
 const morgan = require("morgan");
 const authRoutes = require("./routes/auth.route");
@@ -7,6 +8,11 @@ const errorHandler = require("./middlewares/error.middleware");
 
 const app = express();
 
+app.use(
+  cors({
+    origin: "http://127.0.0.1:5500",
+  }),
+);
 app.use(express.json());
 app.use(morgan("tiny"));
 

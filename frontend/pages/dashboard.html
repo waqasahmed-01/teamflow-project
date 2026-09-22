@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dashboard - TeamFlow</title>
+
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="dashboard.html">
+          TeamFlow
+        </a>
+
+        <div class="d-flex align-items-center gap-3">
+          <span class="text-muted">
+            Welcome, <strong id="userName">User</strong>
+          </span>
+
+          <button id="logoutButton" class="btn btn-outline-danger btn-sm">
+            Logout
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Dashboard -->
+    <main class="container py-5">
+      <div class="mb-4">
+        <h1 class="fw-bold">Dashboard</h1>
+
+        <p class="text-muted">
+          Manage your teams, projects and collaboration from here.
+        </p>
+      </div>
+
+      <!-- Dashboard Cards -->
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">My Teams</h5>
+
+              <p class="card-text text-muted">Create and manage your teams.</p>
+
+              <a href="teams.html" class="btn btn-primary"> View Teams </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Projects</h5>
+
+              <p class="card-text text-muted">
+                Manage projects and track progress.
+              </p>
+
+              <button class="btn btn-primary">View Projects</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Tasks</h5>
+
+              <p class="card-text text-muted">View and manage your tasks.</p>
+
+              <button class="btn btn-primary">View Tasks</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/dashboard.js"></script>
+  </body>
+</html>

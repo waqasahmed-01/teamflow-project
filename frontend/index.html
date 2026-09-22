@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TeamFlow - Team Collaboration Made Simple</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-4 text-primary" href="#">
+          TeamFlow
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#features"> Features </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#how-it-works"> How It Works </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#about"> About </a>
+            </li>
+          </ul>
+
+          <div class="d-flex gap-2">
+            <a href="./pages/login.html" class="btn btn-outline-primary px-4">
+              Login
+            </a>
+
+            <a href="./pages/register.html" class="btn btn-primary px-4">
+              Get Started
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center min-vh-75 py-5">
+          <!-- Hero Content -->
+
+          <div class="col-lg-6">
+            <span class="badge bg-primary-subtle text-primary px-3 py-2 mb-3">
+              Team collaboration made simple
+            </span>
+
+            <h1 class="display-3 fw-bold lh-sm mb-4">
+              Bring your team together.
+              <span class="text-primary"> Get more done. </span>
+            </h1>
+
+            <p class="lead text-secondary mb-4">
+              TeamFlow helps teams organize members, manage collaboration, and
+              keep everyone working toward the same goals.
+            </p>
+
+            <div class="d-flex flex-wrap gap-3">
+              <a href="pages/register.html" class="btn btn-primary btn-lg px-4">
+                Start for Free
+              </a>
+
+              <a href="#features" class="btn btn-outline-secondary btn-lg px-4">
+                Explore Features
+              </a>
+            </div>
+
+            <div class="d-flex flex-wrap gap-4 mt-4 text-secondary small">
+              <span> ✓ Team Management </span>
+
+              <span> ✓ Role-Based Access </span>
+
+              <span> ✓ Easy Collaboration </span>
+            </div>
+          </div>
+
+          <!-- Dashboard Preview -->
+
+          <div class="col-lg-6 mt-5 mt-lg-0">
+            <div class="dashboard-preview shadow-lg">
+              <!-- Browser Header -->
+
+              <div class="preview-header">
+                <div class="d-flex gap-2">
+                  <span class="preview-dot"></span>
+                  <span class="preview-dot"></span>
+                  <span class="preview-dot"></span>
+                </div>
+              </div>
+
+              <!-- Dashboard -->
+
+              <div class="preview-body">
+                <!-- Sidebar -->
+
+                <div class="preview-sidebar">
+                  <div class="preview-logo">TeamFlow</div>
+
+                  <div class="preview-menu active">Dashboard</div>
+
+                  <div class="preview-menu">Teams</div>
+
+                  <div class="preview-menu">Projects</div>
+
+                  <div class="preview-menu">Members</div>
+                </div>
+
+                <!-- Dashboard Content -->
+
+                <div class="preview-content">
+                  <h5 class="fw-bold mb-1">Good morning 👋</h5>
+
+                  <p class="text-secondary small">
+                    Here's what's happening with your teams.
+                  </p>
+
+                  <!-- Stats -->
+
+                  <div class="row g-3 mt-2">
+                    <div class="col-6">
+                      <div class="preview-card">
+                        <small class="text-secondary"> Teams </small>
+
+                        <h3 class="fw-bold mb-1">8</h3>
+
+                        <span class="text-success small"> +2 this month </span>
+                      </div>
+                    </div>
+
+                    <div class="col-6">
+                      <div class="preview-card">
+                        <small class="text-secondary"> Members </small>
+
+                        <h3 class="fw-bold mb-1">42</h3>
+
+                        <span class="text-success small"> +8 this month </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Project 1 -->
+
+                  <div class="preview-project mt-3">
+                    <div class="d-flex justify-content-between">
+                      <span class="fw-semibold"> Website Redesign </span>
+
+                      <span class="text-primary"> 72% </span>
+                    </div>
+
+                    <div class="progress mt-2">
+                      <div class="progress-bar" style="width: 72%"></div>
+                    </div>
+                  </div>
+
+                  <!-- Project 2 -->
+
+                  <div class="preview-project mt-3">
+                    <div class="d-flex justify-content-between">
+                      <span class="fw-semibold"> Mobile Application </span>
+
+                      <span class="text-primary"> 48% </span>
+                    </div>
+
+                    <div class="progress mt-2">
+                      <div class="progress-bar" style="width: 48%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURES ================= -->
+
+    <section id="features" class="py-5 bg-white">
+      <div class="container py-5">
+        <div class="text-center mb-5">
+          <span class="text-primary fw-semibold"> FEATURES </span>
+
+          <h2 class="fw-bold mt-2">Everything your team needs</h2>
+
+          <p class="text-secondary">
+            Simple tools designed to keep your team organized and productive.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Feature 1 -->
+
+          <div class="col-md-4">
+            <div class="feature-card h-100">
+              <div class="feature-icon">👥</div>
+
+              <h4 class="fw-bold">Team Management</h4>
+
+              <p class="text-secondary">
+                Create teams, invite members, and keep everyone organized in one
+                place.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+
+          <div class="col-md-4">
+            <div class="feature-card h-100">
+              <div class="feature-icon">🔐</div>
+
+              <h4 class="fw-bold">Role-Based Access</h4>
+
+              <p class="text-secondary">
+                Give team members the right permissions based on their
+                responsibilities.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+
+          <div class="col-md-4">
+            <div class="feature-card h-100">
+              <div class="feature-icon">📊</div>
+
+              <h4 class="fw-bold">Project Collaboration</h4>
+
+              <p class="text-secondary">
+                Organize projects and keep your team aligned as your work grows.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HOW IT WORKS ================= -->
+
+    <section id="how-it-works" class="py-5">
+      <div class="container py-5">
+        <div class="text-center mb-5">
+          <span class="text-primary fw-semibold"> HOW IT WORKS </span>
+
+          <h2 class="fw-bold mt-2">Get your team moving in minutes</h2>
+
+          <p class="text-secondary">
+            Start collaborating with just three simple steps.
+          </p>
+        </div>
+
+        <div class="row g-4 text-center">
+          <!-- Step 1 -->
+
+          <div class="col-md-4">
+            <div class="step-number">01</div>
+
+            <h4 class="fw-bold">Create a Team</h4>
+
+            <p class="text-secondary">
+              Create your workspace and give your team a place to collaborate.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+
+          <div class="col-md-4">
+            <div class="step-number">02</div>
+
+            <h4 class="fw-bold">Invite Members</h4>
+
+            <p class="text-secondary">
+              Add your teammates and assign appropriate roles and permissions.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+
+          <div class="col-md-4">
+            <div class="step-number">03</div>
+
+            <h4 class="fw-bold">Start Collaborating</h4>
+
+            <p class="text-secondary">
+              Manage your team's work and keep everyone aligned.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+
+    <section id="about" class="py-5">
+      <div class="container py-5">
+        <div class="cta-section text-center">
+          <h2 class="fw-bold">Ready to bring your team together?</h2>
+
+          <p class="text-secondary mb-4">
+            Create your TeamFlow account and start building better
+            collaboration.
+          </p>
+
+          <a href="./pages/register.html" class="btn btn-primary btn-lg px-5">
+            Get Started
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="border-top bg-white">
+      <div class="container py-4">
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2"
+        >
+          <span class="fw-bold text-primary"> TeamFlow </span>
+
+          <span class="text-secondary small">
+            © 2026 TeamFlow. All rights reserved.
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
